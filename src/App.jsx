@@ -20,7 +20,7 @@ function App() {
       // https://backend-openai-beige.vercel.app/openai
       // URL testing
       // http://localhost:3001/openai
-      const response = await fetch('https://backend-openai-beige.vercel.app/openai', {
+      const response = await fetch('https://frolicking-croquembouche-a22662.netlify.app/openai', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -16,6 +16,10 @@ function App() {
     setImageUrl(''); // Limpiar la URL de la imagen anterior
     setButtonDisabled(true); // Deshabilitar el botón para evitar solicitudes duplicadas
     try {
+      // URL Producción
+      // https://backend-openai-beige.vercel.app/openai
+      // URL testing
+      // http://localhost:3001/openai
       const response = await fetch('https://backend-openai-beige.vercel.app/openai', {
         method: 'POST',
         headers: {

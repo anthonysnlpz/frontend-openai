@@ -4,7 +4,7 @@ const generateImage = async (prompt) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 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`
+        'Authorization': `Bearer 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`
       },
       body: JSON.stringify({
         prompt: prompt

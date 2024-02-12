@@ -1,10 +1,12 @@
 const generateImage = async (prompt) => {
   try {
+    const apiKey = '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';
+
     const response = await fetch('https://api.openai.com/v1/images/generations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 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`
+        'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
         prompt: prompt

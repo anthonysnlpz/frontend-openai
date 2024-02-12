@@ -4,7 +4,7 @@ const generateImage = async (prompt) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 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`
+        'Authorization': `Bearer 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`
       },
       body: JSON.stringify({
         prompt: prompt
@@ -16,7 +16,7 @@ const generateImage = async (prompt) => {
     }
 
     const data = await response.json();
-    return data.data[0].url; // Suponiendo que la URL de la imagen está en un objeto `data` devuelto por la API
+    return data.data[0].url;
   } catch (error) {
     console.error('Error al enviar la solicitud al servidor:', error);
     throw new Error('Error al enviar la solicitud al servidor:', error);

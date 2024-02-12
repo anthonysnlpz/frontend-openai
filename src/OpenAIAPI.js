@@ -1,6 +1,6 @@
 const generateImage = async (prompt) => {
   try {
-    const apiKey = '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';
+    const apiKey = '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';
 
     const response = await fetch('https://api.openai.com/v1/images/generations', {
       method: 'POST',
